@@ -10,10 +10,10 @@ def aimFunction(x1,x2,x3,x4,x5,x6,x7):
     if x1 == 3:
         # print("cmesh")
         creat_cmesh_config(x1,x2,x3,x4,x5,x6,x7) 
-        output = os.system("./booksim ./wsy_work/wsy_booksim_cmesh_config > log")
+        output = os.system(".booksim2/src/booksim ./wsy_work/wsy_booksim_cmesh_config > log")
     elif x1==1 or x1 == 2:
         creatConfigFile(x1,x2,x3,x4,x5,x6,x7)
-        output = os.system("./booksim ./wsy_work/wsy_booksim_config_file  > log")
+        output = os.system(".booksim2/src/booksim ./wsy_work/wsy_booksim_config_file  > log")
     # output  = os.system("./booksim  ./wsy_work/wsy_booksim_config_file > log")
     # print("booksim finish!")
     # print("caculate latency:")    
